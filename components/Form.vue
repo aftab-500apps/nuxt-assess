@@ -46,8 +46,8 @@
         v-else
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
       >
+        <option value="India">India</option>
         <option value="USA">USA</option>
-        <option value="Canada">Canada</option>
         <option value="UK">UK</option>
         <!-- Add more countries as needed -->
       </select>
@@ -113,10 +113,8 @@ const clearForm = () => {
 };
 
 const submitForm = () => {
-  // Emit an event to the parent component with the form data
   emit("submit", { ...formData.value, isEditing: isEditing.value });
 
-  // Clear the form after submission
   clearForm();
 };
 </script>

@@ -5,18 +5,10 @@
     <h1 class="text-2xl font-bold mb-4">Employee Management System</h1>
 
     <!-- Search Input -->
-    <input
-      v-model="searchQuery"
-      placeholder="Search by name"
-      class="border p-2 mb-4"
-    />
+    <SearchInput v-model="searchQuery" placeholder="Search by name" />
 
-    <button
-      @click="toggleAddEmployeeModal"
-      class="bg-green-500 text-white px-4 py-2 rounded mb-4"
-    >
-      Add Employee
-    </button>
+    <!-- Add Employee Button -->
+    <ActionButton :onClick="toggleAddEmployeeModal" label="Add Employee" />
 
     <!-- Display Employees -->
     <div v-if="filteredEmployees.length > 0">
