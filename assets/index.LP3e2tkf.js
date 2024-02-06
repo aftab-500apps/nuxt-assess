@@ -1,0 +1,1 @@
+import{_ as o}from"./Heading.7B_opbbV.js";import{_ as t,E as n,w as _,o as c,d as a}from"./entry.9BiDok8q.js";const r={};function s(d,f){const e=o;return c(),n(e,null,{default:_(()=>[a("Home")]),_:1})}const p=t(r,[["render",s]]);export{p as default};
