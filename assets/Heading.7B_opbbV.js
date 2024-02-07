@@ -1,1 +1,0 @@
-import{_ as t,o,c as n,D as c}from"./entry.9BiDok8q.js";const s={},r={class:"text-center text-2xl font-normal p-4"};function _(e,a){return o(),n("h1",r,[c(e.$slots,"default")])}const f=t(s,[["render",_]]);export{f as _};
