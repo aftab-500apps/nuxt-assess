@@ -114,8 +114,10 @@ const deleteContact = (contactId) => {
 };
 
 const filteredContacts = computed(() => {
-  return contacts.value.filter((contact) =>
-    contact.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+  return contacts.value.filter(
+    (contact) =>
+      contact.name &&
+      contact.name.toLowerCase().includes(searchQuery.value.toLowerCase())
   );
 });
 

@@ -144,7 +144,7 @@ const deleteEmployee = (employeeId) => {
 // Filtered employees based on search query
 const filteredEmployees = computed(() => {
   return employees.value.filter((employee) =>
-    employee.name.toLowerCase().includes(searchQuery.value.toLowerCase())
+    employee.name.includes(searchQuery.value)
   );
 });
 
